@@ -33,6 +33,7 @@
   .sidebar-right {
     background-color: #303136;
     width: 300px;
+    position: relative;
 
     .sidebar-top {
       color: #ffffff;
@@ -58,6 +59,46 @@
         .sidebar-add-icon {
           cursor: pointer;
         }
+      }
+    }
+
+    .sidebar-footer {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93%;
+      padding: 10px 0px;
+      border-top: 1px solid #686a6e;
+      margin-left: -3px;
+
+      .sidebar-account {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 60px;
+        }
+
+        .account-name {
+          margin-left: 5px;
+
+          h4 {
+            color: white;
+            font-weight: 500;
+          }
+          
+          span {
+            color: #686a6e;
+          }
+        }
+      }
+
+      .sidebar-voice {
+        display: flex;
+        align-items: center;
+        color: #686a6e;
       }
     }
   }
